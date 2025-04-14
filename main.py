@@ -241,14 +241,14 @@ async def youtube_to_txt(client, message: Message):
     # Remove the temporary text file after sending
     os.remove(txt_file)
     
-@bot.on_message(filters.command(["drm"]) )
+@bot.on_message(filters.command(["abhi"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"`🔹Hi I am Poweful TXT Downloader📥 Bot.\n🔹Send me the txt file and wait.`")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎"
+    credit = f"༄ᶦᶰᵈआशु࿐❥◉🇮🇳™"
     pdf_count = 0
     img_count = 0
     zip_count = 0
