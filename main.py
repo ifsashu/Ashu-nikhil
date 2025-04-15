@@ -241,7 +241,7 @@ async def youtube_to_txt(client, message: Message):
     # Remove the temporary text file after sending
     os.remove(txt_file)
     
-@bot.on_message(filters.command(["abhi"]) )
+@bot.on_message(filters.command(["love"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"`🔹Hi I am Poweful TXT Downloader📥 Bot.\n🔹Send me the txt file and wait.`")
     input: Message = await bot.listen(editable.chat.id)
